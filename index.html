@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Dukung ERB WBBM</title>
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+
+        .container {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 20px);
+            overflow: hidden;
+        }
+
+        /* Trik menyembunyikan banner Google Apps Script */
+		iframe {
+			position: absolute;
+			top: -15px; /* Menarik ke atas untuk sembunyikan banner */
+			left: 0;
+			width: 100%;
+			height: calc(100% + 28px); /* Menambah tinggi persis sama dengan yang ditarik ke atas */
+			border: none;
+		}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <iframe 
+            src="https://script.google.com/macros/s/AKfycbwJGlYF4bEI51Zx__bJBoeQ9yD24mg9ij64cckl8AB8ywFEE5wYvaSfkT7c2lkQ6W0x/exec" 
+            allow="camera; microphone; geolocation"
+            frameborder="0">
+        </iframe>
+    </div>
+
+</body>
+</html>
